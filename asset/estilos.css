@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+#contenedor{
+    height: auto;
+    width:auto;
+
+}
+/*Encabezado de la pagina*/
+.encabezado{
+    background-image:url("fondo.jpg");
+    background-size: cover;
+    text-align: center;
+    padding:2em;
+    display: flex;
+    justify-content: center;
+}
+/* Menu de Navegacion*/
+.navegador {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+
+/*Cuerpo de la pagina*/
+/*parte izquierda*/
+.cuerpo{ 
+    display: flex;
+    text-align: center;
+    background-color: darkgrey;
+    
+}
+.descripcion{
+    padding: 2px;
+    width: 30%;
+    height: 60%;    
+}
+.descripcion img{
+   height: 10%;
+   width: 80%;
+}
+/*Parte derecha*/
+.principal{
+    background-color: white;
+    width: 70%;
+    height: 60%;
+    text-align: left;
+}
+.d1{
+    padding:1%;
+}
+.principal div img{
+    width: 100%;
+}
+/* Pie de pagina */
+.pie-de-pagina{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap:nowrap;
+}
+.pie-de-pagina img{
+    width: 5%;
+    padding:2em;
+}
+#icono{
+text-align: center;
+}
+.pie-de-pagina a{
+    color:white;
+}
+.copy{
+    text-align: center;
+    color: white;
+    background: black;
+    padding: 1rem;
+}
+
+
+/* Responsivos segun dispositivo */
+
+/* Smartphones (portrait & landscape) */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px){
+
+   .encabezado h1{
+       float: left;
+       text-align: center;
+       width: 50%;
+
+   }
+   .encabezado p{  
+       float: right;
+       text-align: center;
+       width: 50%;
+   }
+   
+}
+/* Smartphones (landscape) 
+@media only screen 
+and (min-width : 321px) {
+    
+    
+    }
+
+
+
+/* Smartphones (portrait) 
+@media only screen 
+and (max-width : 320px) {
+    .enlacesuelto{
+        float: left;
+    }
+
+    .pie-de-pagina{
+        flex-wrap: wrap;
+}
+}
+/* iPads (portrait & landscape) 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+}
+
+/* iPads (landscape) 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+
+}
+
+/* Ordenadores de sobremesa y portátiles 
+@media only screen 
+and (min-width : 1224px) {
+
+}
+
+/* Pantallas grandes 
+@media only screen 
+and (min-width : 1824px) {
+
+}
+
+/* iPhone 4 
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+
+}*/
+
