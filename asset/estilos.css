@@ -4,14 +4,18 @@
     text-decoration: none;
     list-style: none;
 }
+    
+
 #contenedor{
     height: auto;
     width:auto;
+    background-image: url("../asset/Fondo1.jpg");
+    
 
 }
 /*Encabezado de la pagina*/
 .encabezado{
-    background-image:url("fondo.jpg");
+    background-color: transparent;
     background-size: cover;
     text-align: center;
     padding:2em;
@@ -19,28 +23,29 @@
     justify-content: center;
 }
 /* Menu de Navegacion*/
-.navegador {
-    text-align: center;
-}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
 }
 li {
     float: left;
 }
 li a {
     display: block;
-    color: white;
+    color:black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 li a:hover {
-    background-color: #111;
+    background-color: lightblue;
+}
+.izq{
+    float:right;
 }
 
 /*Cuerpo de la pagina*/
@@ -48,7 +53,8 @@ li a:hover {
 .cuerpo{ 
     display: flex;
     text-align: center;
-    background-color: darkgrey;
+    background-color: transparent;
+   
     
 }
 .descripcion{
@@ -62,7 +68,7 @@ li a:hover {
 }
 /*Parte derecha*/
 .principal{
-    background-color: white;
+    background-color: transparent;
     width: 70%;
     height: 60%;
     text-align: left;
@@ -75,7 +81,7 @@ li a:hover {
 }
 /* Pie de pagina */
 .pie-de-pagina{
-    background-color: black;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -90,12 +96,15 @@ li a:hover {
 text-align: center;
 }
 .pie-de-pagina a{
-    color:white;
+    color:black;
+}
+.pie-de-pagina img:hover {
+    background-color: lightblue;
 }
 .copy{
     text-align: center;
-    color: white;
-    background: black;
+    color: black;
+    background-color: transparent;
     padding: 1rem;
 }
 
@@ -118,27 +127,14 @@ and (max-device-width : 480px){
        text-align: center;
        width: 50%;
    }
-   
-}
-/* Smartphones (landscape) 
-@media only screen 
-and (min-width : 321px) {
+   .izq {float: left;}
+ 
+}  
     
-    
-    }
-
-
-
-/* Smartphones (portrait) 
+ /*Smartphones (portrait) */
 @media only screen 
 and (max-width : 320px) {
-    .enlacesuelto{
-        float: left;
-    }
-
-    .pie-de-pagina{
-        flex-wrap: wrap;
-}
+    .izq {float: left;}
 }
 /* iPads (portrait & landscape) 
 @media only screen 
